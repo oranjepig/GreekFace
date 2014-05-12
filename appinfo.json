@@ -1,0 +1,29 @@
+{
+    "resources": {
+        "media": [
+            {
+                "name": "FONT_NAXOS_BOLD_34",
+                "type": "font",
+                "file": "fonts/NAXOSB.TTF"
+            },
+            {
+                "name": "FONT_NAXOS_REG_34",
+                "type": "font",
+                "file": "fonts/NAXOSN.TTF"
+            }
+        ]
+    },
+    "companyName": "pantelisx@gmail.com",
+    "shortName": "GreekFace",
+    "uuid": "6fd3c2a4-aca5-4c18-a949-2dcca57c7ad5",
+    "versionCode": 1,
+    "capabilities": [
+        ""
+    ],
+    "longName": "GreekFace",
+    "watchapp": {
+        "watchface": true
+    },
+    "appKeys": {},
+    "versionLabel": "1.0"
+}
