@@ -1,29 +1,34 @@
 {
-    "resources": {
-        "media": [
-            {
-                "name": "FONT_NAXOS_BOLD_34",
-                "type": "font",
-                "file": "fonts/NAXOSB.TTF"
-            },
-            {
-                "name": "FONT_NAXOS_REG_34",
-                "type": "font",
-                "file": "fonts/NAXOSN.TTF"
-            }
-        ]
-    },
-    "companyName": "pantelisx@gmail.com",
-    "shortName": "GreekFace",
+    "versionLabel": "1.1",
     "uuid": "6fd3c2a4-aca5-4c18-a949-2dcca57c7ad5",
+    "appKeys": {},
+    "longName": "GreekFace",
     "versionCode": 1,
     "capabilities": [
         ""
     ],
-    "longName": "GreekFace",
+    "shortName": "GreekFace",
+    "companyName": "pantelisx@gmail.com",
     "watchapp": {
         "watchface": true
     },
-    "appKeys": {},
-    "versionLabel": "1.0"
+    "resources": {
+        "media": [
+            {
+                "type": "font",
+                "name": "FONT_NAXOS_BOLD_32",
+                "file": "fonts/NAXOSB.TTF"
+            },
+            {
+                "type": "font",
+                "name": "FONT_NAXOS_BOLD_34",
+                "file": "fonts/NAXOSB.TTF"
+            },
+            {
+                "type": "font",
+                "name": "FONT_NAXOS_REG_34",
+                "file": "fonts/NAXOSN.TTF"
+            }
+        ]
+    }
 }

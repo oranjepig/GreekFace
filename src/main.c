@@ -12,7 +12,7 @@ char *texthours[13] = {"dwdeka","mia","duo","treiv","tessereiv","pente","exi","e
 
 char *mindecs[6] = {"","deka","eikosi","trianta","saranta","penhnta"};
 
-char *minsingles[10] = {"","ena","duo","tria","tessera","pente","exi","epta","oktw","ennia"};
+char *minsingles[10] = {""," ena"," duo"," tria"," tessera"," pente"," exi"," epta"," oktw"," ennia"};
 
 
 static void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
@@ -28,6 +28,8 @@ static void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
     
   memset(&time_as_text[0], 0, sizeof(time_as_text)); 
   strcat(time_as_text, texthours[hours]);
+  if(hours==4) {text_layer_set_font(top_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_NAXOS_BOLD_32)));}
+  else {text_layer_set_font(top_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_NAXOS_BOLD_34)));};
   
   int mins;
   mins = tick_time->tm_min;
@@ -54,7 +56,7 @@ static void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
   { 
          strcat(minutes_as_text, "kai ");
          strcat(minutes_as_text, minutetext);
-         strcat(minutes_as_text, " ");
+ //      strcat(minutes_as_text, " ");
          strcat(minutes_as_text, minmon);    
    
   } else strcat(minutes_as_text, "akribwv");
@@ -75,7 +77,7 @@ void handle_init(void) {
     text_layer_set_font(top_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_NAXOS_BOLD_34)));
 
   
-    bottom_layer = text_layer_create(GRect(0, 56, 144, 110));
+    bottom_layer = text_layer_create(GRect(0, 51, 144, 110));
     text_layer_set_text_alignment(bottom_layer, GTextAlignmentLeft);
     text_layer_set_background_color(bottom_layer, GColorBlack);
     text_layer_set_text_color(bottom_layer, GColorWhite);
